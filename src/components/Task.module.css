@@ -1,0 +1,91 @@
+.task {
+  width: 100%;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  gap: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.task p {
+  font-size: var(--md);
+  margin-right: auto;
+  border-radius: 0.4rem;
+}
+
+.task p.completed {
+  color: var(--gray-300);
+  text-decoration-line: line-through;
+}
+
+.check {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.check div {
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  -webkit-transition: border, background-color 300ms;
+  -o-transition: border, background-color 300ms;
+  transition: border, background-color 300ms;
+}
+
+.check div:hover {
+  border: 2px solid var(--blue-dark);
+  background-color: var(--blue-dark);
+  opacity: 0.8;
+}
+
+.check svg {
+  color: var(--purple-dark);
+  opacity: 0.9;
+  transition: color 0.27s;
+}
+
+.check svg:hover {
+  color: var(--purple);
+}
+
+.delete {
+  background: none;
+  border: none;
+  border-radius: 0.4rem;
+  color: var(--gray-300);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: background-color 300ms;
+  -o-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.delete:hover {
+  color: var(--danger);
+  background-color: var(--gray-400);
+}
